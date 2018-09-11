@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Documentation Page</title>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <main id="main-doc">
+        <section class="main-section">
+            <header id="introduction">Introduction</header>
+            <blockquote>
+                <p>
+                    Python is a popular programming language. It was created in 1991 by Guido van Rossum.</p>
+                <p>It is used for:</p>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Software Development</li>
+                    <li>Mathematics</li>
+                    <li>System scripting</li>
+                </ul>
+
+                <p>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
+                    Python has a simple syntax similar to the English language.
+                    Python has syntax that allows developers to write programs with fewer lines than some other
+                    programming languages.
+                    Python runs on an interpreter system, meaning that code can be executed as soon as it is written.
+                    This means that prototyping can be very quick.
+                    Python can be treated in a procedural way, an object-orientated way or a functional way.
+                </p>
+        </section>
+        </blockquote>
+
+        <section class="main-section">
+            <header id="getting-started">Getting Started</header>
+            <blockquote>
+                <p>Let's write our first Python file, called helloworld.py, which can be done in any text editor.<br>
+                    <code>print("Hello, World!")</code><br>
+                    Simple as that. Save your file. Open your command line, navigate to the directory where you saved
+                    your file, and run:
+                    <em>C:\Users\Your Name>python helloworld.py</em>
+                    <br>
+                    <p>You should get an output like this:</p> <q>Hello, World!</q>
+                </p>
+        </section>
+        </blockquote><br>
+        <section class="main-section">
+            <header id="variables">Variables</header>
+            <blockquote>
+                <p>Unlike other programming languages, Python has no command for declaring a variable.
+                    A variable is created the moment you first assign a value to it.</p>
+                <article class="vari-code">
+                    <code>x = 5<br>
+             <code>y = "John"</code><br>
+                    <code>print(x)</code><br>
+                    <code>print(y)</code></code>
+                </article>
+                <p>Variables do not need to be declared with any particular type and can even change type after they
+                    have been set.
+                </p>
+            </blockquote>
+        </section>
+        <section class="main-section">
+            <header id="numbers">Numbers</header>
+            <blockquote>
+                <p>There are three numeric types in python:</p>
+                <ul>
+                    <li id="integers">Integers</li>
+                    <li id="floats">Floats</li>
+                    <li id="complex">Complex</li>
+                </ul><br><br>
+                <p>Variables of numeric types are created when you assign a value to them:</p>
+                <br>
+                <code>x = 7 #int</code><br>
+                <code>y = 1.2 #float</code><br>
+                <code>z = 1j#complex</code>
+
+                <br>
+                <p>To verify the type of any object in Python, use the <code id="type">type()</code> function.
+                </p>
+            </blockquote>
+        </section><br>
+        <section class="main-section">
+            <header id="strings">Strings</header>
+            <blockquote>
+                <p>
+                    String literals in python are surrounded by either single quotation marks, or double quotation
+                    marks.
+
+                    'hello' is the same as <q>hello</q>.
+
+                    Strings can be output to screen using the print function. For example: <code>print("Hello, world!")</code>.<br>
+                    Like many other popular programming languages, strings in Python are arrays of bytes representing
+                    unicode characters. However, Python does not have a character data type, a single character is
+                    simply a string with a length of 1.
+                </p>
+            </blockquote>
+        </section>
+        <section class="main-section">
+            <header id="conditions">Conditions</header>
+            <blockquote>
+                <p>Python supports the usual logical conditions from mathematics:</p><br>
+                <ul id="conditionals">
+                    <li>Equals: <code>a==b</code></li>
+                    <li>Not Equals: <code>a!=b</code></li>
+                    <li>Less than: <code> a &lt b</code></li>
+                    <li>Greater than: <code> a &gt b</code></li>
+                    <li>Less than or equal to: <code> a &lt= b</code></li>
+                    <li>Greater than or equal to: <code>a &gt= b</code></li>
+                </ul>
+                <p>These conditions can be used in several ways, most commonly in <q>if statements</q> and loops.
+                    <br>
+
+                    Example: <br>
+                    <code>a=3</code><br>
+                    <code>b=9</code><br>
+                    <code> if a &lt b: print(a less than b)</code><br>
+                    <strong>You must always indent when using conditional, if you don't you will receive an error
+                        message</strong>
+                </p>
+            </blockquote>
+        </section>
+        <section class="main-section">
+            <header id="if-else-statement">if-else statements</header>
+            <p>An else statement can be combined with an if statement. An else statement contains the block of code
+                that executes if the conditional expression in the if statement resolves to 0 or a FALSE value.
+
+                The else statement is an optional statement and there could be at most only one else statement
+                following <strong>if</strong>.</p>
+            <p>The syntax of the if...else statement is:</p>
+            <code>if condition:</code><br>
+            <blockquote><code>statement(s)</code></blockquote><br>
+            <code>else:</code><br>
+            <blockquote><code>statement(s)</code></blockquote>
+        </section>
+        <section class="main-section">
+            <header id="elif">elif statements</header>
+            <p>The elif Statement
+                The elif statement allows you to check multiple expressions for TRUE and execute a block of code as
+                soon as one of the conditions evaluates to TRUE.
+
+                Similar to the else, the elif statement is optional. However, unlike else, for which there can be at
+                most one statement, there can be an arbitrary number of elif statements following an if.</p>
+            <code>if condition:</code><br>
+            <blockquote><code>statement</code>
+                <blockquote><br>
+                    <code>elif condition:</code><br>
+                    <blockquote><code>statement</code></blockquote><br>
+                    <code>elif condition:</code><br>
+                    <blockquote><code>statement</code></blockquote><br>
+                    <code>else:</code><br>
+                    <blockquote><code>statement</code><br>
+                    </blockquote>
+                    <p>Core Python does not provide switch or case statements as in other languages, but we can use
+                        if..elif...statements to simulate switch case</p>
+        </section>
+        <section class="main-section">
+            <header id="loops">Loops</header>
+            <blockquote>
+                <p>Python has two primitive loop commands:</p>
+                <ul>
+                    <li>while loop</li>
+                    <li>For loop</li>
+                </ul>
+                <p>With the while loop we can execute a set of statements as long as a condition is true.</p><br>
+                <code> i = 1</code><br>
+                <code>while i &lt 6:</code><br>
+                <code>print i</code><br>
+                <code>i+=1</code><br>
+                <p> A for loop is used for iterating over a sequence (that is either a list, a tuple or a string).
+
+                    This is less like the for keyword in other programming language, and works more like an iterator
+                    method as found in other object-orientated programming languages.
+                    <br>
+                    <code>fruits = ["apple", "banana", "cherry"]</code><br>
+                    <code>for x in fruits:</code><br>
+                    <code>print(x)</code>
+                </p>
+            </blockquote>
+        </section>
+    </main>
+    <nav id="navbar">
+        <header id="nav-docs">Python Documentation</header>
+        <ul>
+            <a href="#introduction" class="nav-link">
+                <li>Introduction</li>
+            </a>
+            <a href="#getting-started" class="nav-link">
+                <li>Getting Started</li>
+            </a>
+            <a href="#variables" class="nav-link">
+                <li>Variables</li>
+            </a>
+
+            <a href="#numbers" class="nav-link">
+                <li>Numbers</li>
+            </a>
+            <a href="#conditions" class="nav-link">
+                <li>Conditions</li>
+            </a>
+            <a href="#if-else-statement" class="nav-link">
+                <li>if statements</li>
+            </a>
+            <a href="#elif" class="nav-link">
+                <li>elif statement</li>
+            </a>
+            <a href="#loops" class="nav-link">
+                <li>Loops</li>
+            </a>
+        </ul>
+    </nav>
+</body>
+
+</html>
